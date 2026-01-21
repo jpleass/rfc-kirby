@@ -3,12 +3,17 @@
     "getkirby/cms": "^5",
     "getkirby/kql": "^3",
     "johannschopplich/kirby-headless": "^5",
-    "vlucas/phpdotenv": "^5"
+    "vlucas/phpdotenv": "^5",
+    "johannschopplich/kirby-content-translator": "^3.8",
+    "ext-intl": "*",
+    "ext-fileinfo": "*",
+    "ext-gd": "*",
+    "johannschopplich/kirbylog": "^1.4"
   },
   "scripts": {
     "start": [
       "Composer\\Config::disableProcessTimeout",
-      "@php -S localhost:8000 -t public vendor/getkirby/cms/router.php"
+      "/opt/homebrew/opt/php@8.4/bin/php -c php.ini  -S localhost:8000 -t public vendor/getkirby/cms/router.php"
     ]
   },
   "config": {
