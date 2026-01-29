@@ -2,5 +2,8 @@
   "[php]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "yaml.schemas": {
+    "https://www.schemastore.org/yamllint.json": "file:///Users/josephpleass/Documents/Websites/rfc/rfc-kirby/site/blueprints/site.yml"
   }
 }
