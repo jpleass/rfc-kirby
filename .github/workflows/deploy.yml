@@ -19,4 +19,3 @@ jobs:
             export PATH="$HOME/bin:$PATH"
             cd /home/jpleass/apps/rfc-kirby/
             git pull origin main
-            composer install --no-dev --optimize-autoloader --no-interaction
