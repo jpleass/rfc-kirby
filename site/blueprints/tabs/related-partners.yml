@@ -1,0 +1,41 @@
+label:
+  en: Related Partners
+  nl: Gerelateerde Partners
+icon: users
+columns:
+  main:
+    width: 1/1
+    sections:
+      info:
+        type: info
+        text:
+          en: >
+            Use this section to pin related coalition members to the page and override defaults.
+          nl: >
+            Gebruik deze sectie om gerelateerde coalitieleden aan de pagina te koppelen en de standaardwaarden te overschrijven.
+      related-partners-fields:
+        type: fields
+        fields:
+          relatedTitle:
+            width: 1/2
+            type: text
+            label:
+              en: Title
+              de: Titel
+          relatedText:
+            width: 1/2
+            type: textarea
+            label:
+              en: Text
+              de: Text
+          relatedButtons: fields/buttons
+          relatedMembers:
+            type: pages
+            label:
+              en: Related Members
+              nl: Gerelateerde Leden
+            help:
+              en: Pin related coalition members.
+              nl: Koppel gerelateerde coalitieleden.
+            multiple: true
+            query: site.index.template('coalition-member, coalition-organisation')

@@ -1,0 +1,6 @@
+type: select
+label:
+  en: Programme
+  nl: Programma
+options: query
+query: site.index.template('programme').sortBy('title')

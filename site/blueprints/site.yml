@@ -3,15 +3,28 @@ options:
 columns:
   - width: 1/2
     sections:
-      albums: sections/albums
+      data:
+        type: pages
+        headline:
+          en: Data
+          de: Daten
+        help: This section represents a database for the Kirby API.
+        query: site.index.template('data').children
+        create: false
 
   - width: 1/2
     sections:
-      notes: sections/notes
+      programmes:
+        type: pages
+        headline:
+          en: Programmes
+          de: Programme
+        help: This section represents the programmes for the Kirby site.
+        query: site.index.template('programmes')
       pages:
         type: pages
-        create: default
-        templates:
-          - about
-          - home
-          - default
+        headline:
+          en: Pages
+          de: Paginas
+        help: This section represents the pages for the Kirby site.
+        query: site.childrenAndDrafts.filterBy('intendedTemplate', 'not in', ['data', 'programmes'])

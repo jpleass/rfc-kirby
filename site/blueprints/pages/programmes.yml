@@ -1,0 +1,13 @@
+title: Programmes
+options:
+  preview: "{{ page.frontendUrl }}"
+columns:
+  main:
+    width: 2/3
+    sections:
+      pages:
+        type: pages
+        template: programme
+        headline:
+          en: Programmes
+          nl: Programma's

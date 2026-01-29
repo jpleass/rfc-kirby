@@ -1,0 +1,20 @@
+type: fields
+fields:
+  title:
+    type: text
+    width: 1/2
+    label:
+      en: Title
+      nl: Titel
+  cover:
+    width: 1/2
+    type: files
+    label:
+      en: Cover Image
+      nl: Omslagafbeelding
+    multiple: false
+  intro:
+    type: textarea
+    label:
+      en: Introduction
+      nl: Introductie

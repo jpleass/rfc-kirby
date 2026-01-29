@@ -1,0 +1,14 @@
+title: Data Group Consultants
+options:
+  preview: "{{ page.frontendUrl }}"
+columns:
+  main:
+    width: 2/3
+    sections:
+      pages:
+        type: pages
+        search: true
+        headline:
+          en: Data Entries
+          nl: Datapunten
+        template: consultant

@@ -1,0 +1,51 @@
+title: Programmes
+options:
+  preview: "{{ page.frontendUrl }}"
+columns:
+  main:
+    width: 3/3
+    sections:
+      colors:
+        type: fields
+        fields:
+          color1:
+            label: Color 1
+            extends: fields/color
+          color2:
+            label: Color 2
+            extends: fields/color
+      pageHeader:
+        extends: sections/page-header
+      fields:
+        type: fields
+        fields:
+          video:
+            type: url
+            label:
+              en: Video URL
+              nl: Video URL
+            width: 1/1
+          relatedEvents:
+            width: 1/2
+            type: pages
+            label:
+              en: Related Events
+              nl: Gerelateerde Evenementen
+            help:
+              en: Select related events.
+              nl: Selecteer gerelateerde evenementen.
+            multiple: true
+            query: site.index.template('content-event')
+          relatedArticles:
+            width: 1/2
+            type: pages
+            label:
+              en: Related Articles
+              nl: Gerelateerde Artikelen
+            help:
+              en: Select related articles.
+              nl: Selecteer gerelateerde artikelen.
+            multiple: true
+            query: site.index.template('content-article')
+      relatedPartners:
+        extends: sections/related-partners

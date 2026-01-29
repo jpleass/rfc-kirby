@@ -1,0 +1,14 @@
+.k-block-type-inline-image {
+  padding: 0 25%;
+  border: 2px dashed #ccc;
+}
+
+.k-block-container-fieldset-gap {
+  background: repeating-linear-gradient(
+    135deg,
+    #e0e0e0,
+    #e0e0e0 10px,
+    #cccccc 10px,
+    #cccccc 20px
+  );
+}

@@ -1,0 +1,15 @@
+# Color field options for DRY usage in blueprints
+label: Color
+width: 1/3
+type: color
+mode: options
+options:
+  - "#CF889D"
+  - "#67A6E4"
+  - "#9AD2C5"
+  - "#78FFEA"
+  - "#FC70A3"
+  - "#F6F245"
+  - "#C79B64"
+  - "#DF982D"
+  - "#D48D00"

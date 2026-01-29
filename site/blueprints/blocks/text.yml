@@ -1,0 +1,17 @@
+icon: text
+wysiwyg: true
+preview: text
+fields:
+  text:
+    type: writer
+    headings:
+      - 4
+      - 5
+      - 6
+    nodes:
+      - heading
+      - bulletList
+      - orderedList
+    placeholder: field.blocks.text.placeholder
+    toolbar:
+      inline: false

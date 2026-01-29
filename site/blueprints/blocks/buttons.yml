@@ -1,0 +1,6 @@
+name:
+  en: Buttons
+  nl: Knoppen
+preview: fields
+fields:
+  buttons: fields/buttons

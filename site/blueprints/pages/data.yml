@@ -1,0 +1,12 @@
+title: Data
+options:
+  preview: "{{ page.frontendUrl }}"
+columns:
+  main:
+    width: 2/3
+    sections:
+      pages:
+        type: pages
+        headline:
+          en: Data Groups
+          nl: Datagroepen

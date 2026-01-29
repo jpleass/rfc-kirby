@@ -1,0 +1,16 @@
+type: structure
+label:
+  en: Buttons
+  de: Schaltflächen
+help:
+  en: Add buttons with text and URL.
+  de: Fügen Sie Schaltflächen mit Text und URL hinzu.
+fields:
+  link:
+  text:
+  type:
+    type: radio
+    options:
+      - primary
+      - secondary
+    default: primary

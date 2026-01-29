@@ -1,0 +1,25 @@
+title: Content
+options:
+  preview: "{{ page.frontendUrl }}"
+
+columns:
+  events:
+    width: 1/2
+    sections:
+      events:
+        type: pages
+        template: content-event
+        search: true
+        headline:
+          en: Agenda events
+          nl: Agenda evenementen
+  articles:
+    width: 1/2
+    sections:
+      articles:
+        search: true
+        type: pages
+        template: content-article
+        headline:
+          en: Articles
+          nl: Artikelen

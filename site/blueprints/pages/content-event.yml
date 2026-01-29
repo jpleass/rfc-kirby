@@ -1,0 +1,51 @@
+title: Content Article
+options:
+  preview: "{{ page.frontendUrl }}"
+
+tabs:
+  header:
+    icon: box
+    columns:
+      main:
+        width: 2/3
+        sections:
+          programme: sections/programme
+          contentHeader: sections/content-header
+          fields:
+            type: fields
+            fields:
+              date:
+                type: date
+                default: today
+                width: 1/2
+              time:
+                type: text
+                width: 1/2
+              location:
+                type: text
+                width: 1/2
+              type:
+                type: text
+                width: 1/2
+                help:
+                  en: Specify the type of event (e.g., Webinar, Workshop).
+                  nl: Specificeer het type evenement (bijv. Webinar, Workshop).
+      files:
+        width: 1/3
+        sections:
+          files: sections/files
+  content:
+    icon: file-text
+    label:
+      en: Content
+      nl: Inhoud
+    columns:
+      main:
+        width: 2/3
+        sections:
+          content: sections/content
+      files:
+        width: 1/3
+        sections:
+          files: sections/files
+  relatedPartners: tabs/related-partners

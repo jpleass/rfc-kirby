@@ -1,0 +1,14 @@
+type: fields
+fields:
+  blocks:
+    type: blocks
+    fieldsets:
+      - text
+      - image
+      - inline-image
+      - gallery
+      - quote
+      - video
+      - buttons
+      - gap
+      - code

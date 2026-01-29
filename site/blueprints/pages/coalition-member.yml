@@ -1,0 +1,93 @@
+title: Coalition Member
+options:
+  preview: "{{ page.frontendUrl }}"
+columns:
+  main:
+    width: 3/3
+    sections:
+      fields:
+        type: fields
+        fields:
+          # --- Identity & Contact ---
+          image:
+            type: files
+            label:
+              en: Profile Image
+              nl: Profielfoto
+            help:
+              en: Upload a profile image for the coalition member.
+              nl: Upload een profielfoto voor het coalitielid.
+            multiple: false
+            width: 1/2
+          gap:
+          role:
+            type: text
+            label:
+              en: Role
+              nl: Rol
+            help:
+              en: Specify the role of the coalition member.
+              nl: Specificeer de rol van het coalitielid.
+            width: 1/2
+          company:
+            type: text
+            label:
+              en: Company
+              nl: Bedrijf
+            help:
+              en: Specify the company of the coalition member.
+              nl: Specificeer het bedrijf van het coalitielid.
+            width: 1/2
+          organisation:
+            type: pages
+            label:
+              en: Organisation
+              nl: Organisatie
+            help:
+              en: Link to the coalition organisation page.
+              nl: Koppel aan de coalitieorganisatiepagina.
+            query: site.index.template('coalition-organisation')
+            width: 1/2
+            multiple: false
+          email:
+            type: email
+            label:
+              en: Email
+              nl: E-mail
+            help:
+              en: Specify the email address of the coalition member.
+              nl: Specificeer het e-mailadres van het coalitielid.
+            width: 1/2
+          linkedIn:
+            type: url
+            label:
+              en: LinkedIn Profile
+              nl: LinkedIn Profiel
+            help:
+              en: Provide the LinkedIn profile URL of the coalition member.
+              nl: Geef de LinkedIn-profiel-URL van het coalitielid op.
+            width: 1/2
+
+          # --- Biography & Quote ---
+          line:
+          biography:
+            type: textarea
+            label:
+              en: Biography
+              nl: Biografie
+            help:
+              en: Write a short biography for the coalition member.
+              nl: Schrijf een korte biografie voor het coalitielid.
+            width: 1/2
+          buttons:
+            extends: fields/buttons
+            width: 1/2
+          quote:
+            type: textarea
+            label:
+              en: Quote
+              nl: Citaat
+            help:
+              en: Add a quote from the coalition member.
+              nl: Voeg een citaat toe van het coalitielid.
+            width: 1/2

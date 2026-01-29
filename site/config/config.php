@@ -18,6 +18,7 @@ return [
     'languages' => env('KIRBY_MULTILANG', false),
 
     'panel' => [
+        'css' => '/custom-panel.css',
         'install' => env('KIRBY_PANEL_INSTALL', false),
         'slug' => env('KIRBY_PANEL_SLUG', 'panel'),
         'vue' => [

@@ -1,0 +1,63 @@
+title: Coalition Organisation
+options:
+  preview: "{{ page.frontendUrl }}"
+columns:
+  main:
+    width: 3/3
+    sections:
+      fields:
+        type: fields
+        fields:
+          # --- Identity & Contact ---
+          image:
+            type: files
+            label:
+              en: Profile Image
+              nl: Profielfoto
+            help:
+              en: Upload a profile image for the coalition member.
+              nl: Upload een profielfoto voor het coalitielid.
+            multiple: false
+            width: 1/2
+          gap:
+          type:
+            width: 1/2
+            type: radio
+            options:
+              - Organisatie
+              - Lid
+              - Funder
+            default: Organisatie
+          website:
+            type: url
+            label:
+              en: Website
+              nl: Website
+            help:
+              en: Specify the website of the coalition organisation.
+              nl: Specificeer de website van de coalitieorganisatie.
+            width: 1/2
+
+          # --- Biography & Quote ---
+          line:
+          biography:
+            type: textarea
+            label:
+              en: Biography
+              nl: Biografie
+            help:
+              en: Write a short biography for the coalition member.
+              nl: Schrijf een korte biografie voor het coalitielid.
+            width: 1/2
+          buttons:
+            extends: fields/buttons
+            width: 1/2
+          quote:
+            type: textarea
+            label:
+              en: Quote
+              nl: Citaat
+            help:
+              en: Add a quote from the coalition member.
+              nl: Voeg een citaat toe van het coalitielid.
+            width: 1/2

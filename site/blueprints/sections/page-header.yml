@@ -1,0 +1,35 @@
+type: fields
+fields:
+  title:
+    type: text
+    width: 1/2
+    label:
+      en: Title
+      de: Titel
+  subtitle:
+    type: text
+    width: 1/2
+    label:
+      en: Subtitle
+      de: Untertitel
+  intro:
+    type: textarea
+    label:
+      en: Introduction
+      de: Einführung
+    width: 1/2
+  buttons:
+    extends: fields/buttons
+    fields:
+      text:
+        type: text
+        label:
+          en: Button Text
+          de: Schaltflächentext
+      url:
+        type: url
+        label:
+          en: Button URL
+          de: Schaltflächen-URL
+      line:
+        type: line
