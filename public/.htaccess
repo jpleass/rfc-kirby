@@ -1,6 +1,7 @@
 # Kirby .htaccess
 
 # Core rewrite rules
+
 <IfModule mod_rewrite.c>
 
     RewriteEngine on
@@ -21,16 +22,20 @@
 </IfModule>
 
 # Pass the Authorization header to PHP.
+
 SetEnvIf Authorization "(.+)" HTTP_AUTHORIZATION=$1
 
 # Security
+
 # Remove the `X-Powered-By` response header providing server-side technology information.
+
 <IfModule mod_headers.c>
     Header unset X-Powered-By
     Header always unset X-Powered-By
 </IfModule>
 
 # Compression for better web performance
+
 <IfModule mod_deflate.c>
 
     # Force compression for mangled `Accept-Encoding` request headers.
@@ -77,4 +82,12 @@ SetEnvIf Authorization "(.+)" HTTP_AUTHORIZATION=$1
 
     </IfModule>
 
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(jpg|jpeg|png|gif|svg|webp)$">
+        Header set Access-Control-Allow-Origin "*"
+        Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+        Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+    </FilesMatch>
 </IfModule>
