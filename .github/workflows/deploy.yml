@@ -16,6 +16,7 @@ jobs:
           username: jpleass
           key: ${{ secrets.OPALSTACK_SSH_KEY }}
           script: |
+            export PATH="$HOME/bin:$PATH"
             cd /home/jpleass/apps/rfc-kirby/
             git pull origin main
             composer install -no-dev --optimize-autoloader --no-interaction
