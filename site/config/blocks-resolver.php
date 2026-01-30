@@ -41,6 +41,10 @@ return [
                 return imageToKirbyImageData($image);
             })->values();
         },
+        // INLINE IMAGE
+        'inlineImage:image' => function (Field $field, Block $block) {
+            return $field->toFile() ? imageToKirbyImageData($field->toFile()) : null;
+        },
         // BUTTON
         // 'button:link' => function (Field $field) {
         //     $isPage = $field->toPage();
