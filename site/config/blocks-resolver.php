@@ -42,7 +42,7 @@ return [
             })->values();
         },
         // INLINE IMAGE
-        'inlineImage:image' => function (Field $field, Block $block) {
+        'inline-image:image' => function (Field $field, Block $block) {
             return $field->toFile() ? imageToKirbyImageData($field->toFile()) : null;
         },
         // BUTTON
