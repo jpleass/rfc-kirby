@@ -35,6 +35,12 @@ return [
                 return resolveButton($button);
             })->values();
         },
+        // GALLERY
+        'gallery:images' => function (Field $field, Block $block) {
+            return $field->toFiles()->map(function ($image) {
+                return imageToKirbyImageData($image);
+            })->values();
+        },
         // BUTTON
         // 'button:link' => function (Field $field) {
         //     $isPage = $field->toPage();
