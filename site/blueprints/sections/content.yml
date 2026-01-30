@@ -11,4 +11,4 @@ fields:
       - video
       - buttons
       - gap
-      - code
+      # - code
