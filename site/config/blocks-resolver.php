@@ -1,7 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../plugins/atria/helpers/data.php';
-require_once __DIR__ . '/../plugins/atria/helpers/links.php';
+require_once __DIR__ . '/../plugins/rfc/helpers/data.php';
 
 
 use Kirby\Cms\Block;

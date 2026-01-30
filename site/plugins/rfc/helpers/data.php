@@ -2,19 +2,6 @@
 
 
 
-function pageToKirbyBasePageData($page)
-{
-  return [
-    'id' => $page->id(),
-    'uri' => $page->uri(),
-    'title' => $page->headline()->isNotEmpty() ? $page->headline()->value() : $page->title()->value(),
-    'intendedTemplate' => $page->intendedTemplate()->name(),
-    'description' => $page->description()->value(),
-    'i18nMeta' => $page->i18nMeta(),
-    'sortDate' => $page->date()->toDate(),
-  ];
-}
-
 /**
  * Converts a Kirby File object to an array of image data.
  *

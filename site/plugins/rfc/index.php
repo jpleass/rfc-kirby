@@ -3,11 +3,10 @@
 use Kirby\Cms\App as Kirby;
 
 require_once __DIR__ . '/helpers/data.php';
-require_once __DIR__ . '/helpers/links.php';
-require_once __DIR__ . '/helpers/traverse.php';
 
 
-Kirby::plugin('joseph-pleass/atria', [
+
+Kirby::plugin('joseph-pleass/rfc', [
   /**
    * @kql-allowed
    */
