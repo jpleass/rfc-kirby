@@ -19,3 +19,4 @@ vendor
 !/storage/sessions/.gitkeep
 /site/config/.license
 /site/plugins/*
+!/site/plugins/rfc
