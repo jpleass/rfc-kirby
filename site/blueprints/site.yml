@@ -9,7 +9,7 @@ columns:
           en: Data
           de: Daten
         help: This section represents a database for the Kirby API.
-        query: site.index.template('data').children
+        query: page('data').children
         create: false
 
   - width: 1/2
