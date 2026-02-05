@@ -7,6 +7,7 @@ columns:
     sections:
       pages:
         type: pages
+        create: false
         headline:
           en: Data Groups
           nl: Datagroepen

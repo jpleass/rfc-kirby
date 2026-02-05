@@ -14,6 +14,14 @@ columns:
           color2:
             label: Color 2
             extends: fields/color
+          archive:
+            type: toggle
+            label:
+              en: Archive Project
+              nl: Archief Project
+            help:
+              en: Toggle to archive this project.
+              nl: Schakel in om dit project te archiveren.
       pageHeader:
         extends: sections/page-header
       fields:
