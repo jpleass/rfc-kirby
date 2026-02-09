@@ -45,6 +45,14 @@ return [
         'inline-image:image' => function (Field $field, Block $block) {
             return $field->toFile() ? imageToKirbyImageData($field->toFile()) : null;
         },
+        // QUOTE
+        'quote:logo' => function (Field $field) {
+            return $field->toFile() ? imageToKirbyImageData($field->toFile()) : null;
+        },
+        'quote:logoLink' => function (Field $field) {
+            $isPage = $field->toPage();
+            return $isPage ? $isPage->uri() : $field->toUrl();
+        },
         // BUTTON
         // 'button:link' => function (Field $field) {
         //     $isPage = $field->toPage();
