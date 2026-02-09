@@ -1,7 +1,6 @@
 name: field.blocks.quote.name
 icon: quote
-wysiwyg: true
-preview: quote
+preview: fields
 fields:
   text:
     label: field.blocks.quote.text.label
@@ -19,9 +18,7 @@ fields:
     label:
       en: Role
       nl: Rol
-    type: writer
-    inline: true
-    icon: user-tie
+    type: text
   logo:
     label:
       en: Logo
