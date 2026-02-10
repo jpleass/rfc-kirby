@@ -11,3 +11,21 @@ columns:
         headline:
           en: Programmes
           nl: Programma's
+      fields:
+        type: fields
+        fields:
+          text:
+            type: textarea
+            label:
+              en: Text
+              nl: Tekst
+          archiveTitle:
+            type: text
+            label:
+              en: Archive title
+              nl: Archief titel
+          archiveText:
+            type: textarea
+            label:
+              en: Archive text
+              nl: Archief tekst
