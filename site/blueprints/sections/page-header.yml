@@ -4,19 +4,19 @@ fields:
     type: text
     width: 1/2
     label:
-      en: Title
-      de: Titel
+      en: Headline
+      nl: Kop
   subtitle:
     type: text
     width: 1/2
     label:
       en: Subtitle
-      de: Untertitel
+      nl: Subkop
   intro:
     type: textarea
     label:
       en: Introduction
-      de: Einführung
+      nl: Introductie
     width: 1/2
   buttons:
     extends: fields/buttons
@@ -25,9 +25,9 @@ fields:
         type: text
         label:
           en: Button Text
-          de: Schaltflächentext
+          nl: Knop Tekst
       url:
         type: url
         label:
           en: Button URL
-          de: Schaltflächen-URL
+          nl: Knop URL
