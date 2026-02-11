@@ -22,6 +22,15 @@ columns:
             help:
               en: Toggle to archive this project.
               nl: Schakel in om dit project te archiveren.
+          cover:
+            type: files
+            multiple: false
+            label:
+              en: Cover Image
+              nl: Omslagafbeelding
+            help:
+              en: Upload a cover image for this project.
+              nl: Upload een omslagafbeelding voor dit project.
       pageHeader:
         extends: sections/page-header
       fields:
@@ -55,5 +64,3 @@ columns:
               nl: Selecteer gerelateerde artikelen.
             multiple: true
             query: site.index.template('content-article')
-      relatedPartners:
-        extends: sections/related-partners
