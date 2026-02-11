@@ -65,3 +65,36 @@ sections:
                   nl: Afbeelding
                 type: files
                 multiple: false
+      pageLinks:
+        type: blocks
+        label:
+          en: Page Links
+          nl: Pagina Links
+        fieldsets:
+          pageLink:
+            label:
+              en: Page Link
+              nl: Pagina Link
+            fields:
+              title:
+                type: text
+                label:
+                  en: Title
+                  nl: Titel
+              page:
+                type: pages
+                label:
+                  en: Page
+                  nl: Pagina
+                multiple: false
+              text:
+                type: textarea
+                label:
+                  en: Text
+                  nl: Tekst
+              cover:
+                type: files
+                label:
+                  en: Image
+                  nl: Afbeelding
+                multiple: false
