@@ -1,6 +1,6 @@
 type: fields
 fields:
-  title:
+  headline:
     type: text
     width: 1/2
     label:

@@ -1,0 +1,42 @@
+title: Coalition Overview
+
+options:
+  preview: "{{ page.frontendUrl }}"
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      pageHeader:
+        extends: sections/page-header
+      fields:
+        type: fields
+        fields:
+          orginsationTitle:
+            type: text
+            label:
+              en: Funder Title
+              nl: Organisatie Titel
+          orginsationDescription:
+            type: textarea
+            label:
+              en: Organisation Description
+              nl: Organisatie Beschrijving
+          funderTitle:
+            type: text
+            label:
+              en: Funder Title
+              nl: Funder Titel
+          funderDescription:
+            type: textarea
+            label:
+              en: Funder Description
+              nl: Funder Beschrijving
+  sidebar:
+    width: 1/3
+    sections:
+      pages:
+        type: pages
+        template: default
+      files:
+        type: files
