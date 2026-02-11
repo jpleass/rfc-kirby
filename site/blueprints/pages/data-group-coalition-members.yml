@@ -5,6 +5,19 @@ columns:
   main:
     width: 2/3
     sections:
+      fields:
+        type: fields
+        fields:
+          carouselTitle:
+            type: text
+            label:
+              en: Carousel Title
+              nl: Carrousel Titel
+          carouselText:
+            type: textarea
+            label:
+              en: Carousel Text
+              nl: Carrousel Tekst
       pages:
         type: pages
         search: true
