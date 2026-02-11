@@ -11,6 +11,14 @@ columns:
         help: This section represents a database for the Kirby API.
         query: page('data').children
         create: false
+      fields:
+        type: fields
+        fields:
+          menuItems:
+            type: pages
+            headline:
+              en: Menu Items
+              nl: Menu Items
 
   - width: 1/2
     sections:
