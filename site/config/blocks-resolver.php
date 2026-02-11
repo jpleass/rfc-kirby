@@ -70,5 +70,13 @@ return [
         'text:text' => function (Field $field, Block $block) {
             return $field->resolvePermalinks()->value();
         },
+
+        // TESTIMONIAL
+        'testimonial:logo' => function (Field $field) {
+            return $field->toFile() ? imageToKirbyImageData($field->toFile()) : null;
+        },
+        'testimonial:cover' => function (Field $field) {
+            return $field->toFile() ? imageToKirbyImageData($field->toFile()) : null;
+        },
     ]
 ];
