@@ -31,5 +31,3 @@ fields:
         label:
           en: Button URL
           de: Schaltflächen-URL
-      line:
-        type: line
