@@ -12,7 +12,7 @@ tabs:
             type: fields
             fields:
               # --- Identity & Contact ---
-              image:
+              cover:
                 type: files
                 label:
                   en: Profile Image
