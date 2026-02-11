@@ -2,6 +2,7 @@ title: Coalition Overview
 
 options:
   preview: "{{ page.frontendUrl }}"
+  pages: false
 
 columns:
   main:
