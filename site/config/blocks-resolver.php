@@ -81,10 +81,10 @@ return [
         },
 
         // PAGE LINKS
-        'pageLinks:cover' => function (Field $field) {
+        'pageLink:cover' => function (Field $field) {
             return $field->toFile() ? imageToKirbyImageData($field->toFile()) : null;
         },
-        'pageLinks:page' => function (Field $field) {
+        'pageLink:page' => function (Field $field) {
             $isPage = $field->toPage();
             return $isPage ? [
                 'uri' => $isPage->uri(),
