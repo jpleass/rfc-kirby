@@ -20,14 +20,3 @@ fields:
     width: 1/2
   buttons:
     extends: fields/buttons
-    fields:
-      text:
-        type: text
-        label:
-          en: Button Text
-          nl: Knop Tekst
-      url:
-        type: url
-        label:
-          en: Button URL
-          nl: Knop URL
