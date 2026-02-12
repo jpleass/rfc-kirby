@@ -58,6 +58,7 @@ return [
         //     $isPage = $field->toPage();
         //     return $isPage ? $isPage->uri() : $field->toUrl();
         // },
+
         // VIDEO
         'video:video' => function (Field $field, Block $block) {
             return $field->toFile() ? [
@@ -78,5 +79,18 @@ return [
         'testimonial:cover' => function (Field $field) {
             return $field->toFile() ? imageToKirbyImageData($field->toFile()) : null;
         },
+
+        // PAGE LINKS
+        'pageLinks:cover' => function (Field $field) {
+            return $field->toFile() ? imageToKirbyImageData($field->toFile()) : null;
+        },
+        'pageLinks:page' => function (Field $field) {
+            $isPage = $field->toPage();
+            return $isPage ? [
+                'uri' => $isPage->uri(),
+                'title' => $isPage->title()->value()
+            ] : null;
+        },
+
     ]
 ];
