@@ -1,0 +1,50 @@
+title: Activity hub
+options:
+  preview: "{{ page.frontendUrl }}"
+columns:
+  main:
+    width: 2/3
+    sections:
+      pageHeader:
+        extends: sections/page-header
+      fields:
+        type: fields
+        fields:
+          eventsTitle:
+            type: text
+            label:
+              en: Events Section Title
+              nl: Titel Evenementen Sectie
+            help:
+              en: Title for the events section on the activity hub page.
+              nl: Titel voor de evenementen sectie op de activity hub pagina.
+          pinnedEvents:
+            width: 1/2
+            type: pages
+            label:
+              en: Pinned Events
+              nl: Vastgezette Evenementen
+            help:
+              en: Select related events to pin to the top of the events section.
+              nl: Selecteer gerelateerde evenementen om bovenaan de evenementen sectie vast te zetten.
+            multiple: true
+            query: site.index.template('content-event')
+          articlesTitle:
+            type: text
+            label:
+              en: Articles Section Title
+              nl: Titel Artikelen Sectie
+            help:
+              en: Title for the articles section on the activity hub page.
+              nl: Titel voor de artikelen sectie op de activity hub pagina.
+          pinnedArticles:
+            width: 1/2
+            type: pages
+            label:
+              en: Pinned Articles
+              nl: Vastgezette Artikelen
+            help:
+              en: Select related articles to pin to the top of the articles section.
+              nl: Selecteer gerelateerde artikelen om bovenaan de artikelen sectie vast te zetten.
+            multiple: true
+            query: site.index.template('content-article')
