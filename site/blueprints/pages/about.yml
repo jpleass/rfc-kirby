@@ -18,6 +18,15 @@ columns:
             help:
               en: Title for the team section on the about page.
               nl: Titel voor de team sectie op de over pagina.
+          teamMembers:
+            type: pages
+            label:
+              en: Team Members
+              nl: Teamleden
+            help:
+              en: Add team members for the team section on the about page.
+              nl: Voeg teamleden toe voor de team sectie op de over pagina.
+            query: "site.index.template('team')"
           documentationTitle:
             type: text
             label:
