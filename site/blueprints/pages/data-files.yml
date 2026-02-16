@@ -1,0 +1,13 @@
+title: Data Files
+options:
+  preview: "{{ page.frontendUrl }}"
+columns:
+  main:
+    width: 2/3
+    sections:
+      files:
+        type: files
+        headline:
+          en: Data Files
+          nl: Databestanden
+        template: data-file

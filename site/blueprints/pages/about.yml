@@ -34,6 +34,17 @@ columns:
             help:
               en: Text for the documentation section on the about page.
               nl: Tekst voor de documentatie sectie op de over pagina.
+          documentationFiles:
+            type: files
+            label:
+              en: Documentation Files
+              nl: Documentatie Bestanden
+            help:
+              en: Add files for the documentation section on the about page.
+              nl: Voeg bestanden toe voor de documentatie sectie op de over pagina.
+            template: data-file
+            uploads: false
+            query: "site.index.files.template('data-file')"
           faqTitle:
             type: text
             label:
