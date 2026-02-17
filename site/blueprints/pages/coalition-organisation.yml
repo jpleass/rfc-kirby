@@ -9,7 +9,7 @@ columns:
         type: fields
         fields:
           # --- Identity & Contact ---
-          image:
+          cover:
             type: files
             label:
               en: Logo Image
