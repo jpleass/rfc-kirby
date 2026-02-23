@@ -1,0 +1,6 @@
+type: blocks
+label:
+  en: Testimonials
+  nl: Testimonials
+fieldsets:
+  - testimonial

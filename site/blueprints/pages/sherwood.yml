@@ -1,0 +1,72 @@
+title: Sherwood
+options:
+  preview: "{{ page.frontendUrl }}"
+columns:
+  main:
+    width: 2/3
+    sections:
+      pageHeader:
+        extends: sections/page-header
+        fields:
+          headline: false
+          subtitle: false
+      fields:
+        type: fields
+        fields:
+          consultants:
+            type: object
+            label:
+              en: Consultants area
+              nl: Consultants gebied
+            fields:
+              title:
+                type: text
+                label:
+                  en: Title
+                  nl: Titel
+              text:
+                type: textarea
+                label:
+                  en: Text
+                  nl: Tekst
+          animationText:
+            type: structure
+            label:
+              en: Animation Text
+              nl: Animatie Tekst
+            fields:
+              title:
+                type: text
+                label:
+                  en: Title
+                  nl: Titel
+              subtitle:
+                type: text
+                label:
+                  en: Subtitle
+                  nl: Subtitel
+              text:
+                type: textarea
+                label:
+                  en: Text
+                  nl: Tekst
+          callToAction:
+            type: object
+            label:
+              en: Call to Action
+              nl: Oproep tot Actie
+            fields:
+              title:
+                type: text
+                label:
+                  en: Title
+                  nl: Titel
+              text:
+                type: textarea
+                label:
+                  en: Text
+                  nl: Tekst
+              buttons: fields/buttons
+          testimonials: fields/testimonials
+      faq:
+        extends: sections/faq

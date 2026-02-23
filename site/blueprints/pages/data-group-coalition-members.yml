@@ -1,9 +1,7 @@
+extends: pages/data-group-base
 title: Data Group Coalition Members
-options:
-  preview: "{{ page.frontendUrl }}"
 columns:
   main:
-    width: 2/3
     sections:
       fields:
         type: fields
@@ -19,9 +17,4 @@ columns:
               en: Carousel Text
               nl: Carrousel Tekst
       pages:
-        type: pages
-        search: true
-        headline:
-          en: Data Entries
-          nl: Datapunten
         template: coalition-member

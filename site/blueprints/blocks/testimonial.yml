@@ -1,0 +1,5 @@
+extends: blocks/quote-base
+name: Testimonial
+label: "{{ citation }}"
+fields:
+  cover: { label: { en: Image, nl: Afbeelding }, type: files, multiple: false }

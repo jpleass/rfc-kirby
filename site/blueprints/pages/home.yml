@@ -25,46 +25,7 @@ sections:
         label:
           en: Testimonials Title
           nl: Testimonials Titel
-      testimonials:
-        type: blocks
-        label:
-          en: Testimonials
-          nl: Testimonials
-        fieldsets:
-          testimonial:
-            label:
-              en: Testimonial
-              nl: Testimonial
-            fields:
-              text:
-                label: field.blocks.quote.text.label
-                placeholder: field.blocks.quote.text.placeholder
-                type: writer
-                inline: true
-                icon: quote
-              citation:
-                label: field.blocks.quote.citation.label
-                placeholder: field.blocks.quote.citation.placeholder
-                type: writer
-                inline: true
-                icon: user
-              role:
-                label:
-                  en: Role
-                  nl: Rol
-                type: text
-              logo:
-                label:
-                  en: Logo
-                  nl: Logo
-                type: files
-                max: 1
-              cover:
-                label:
-                  en: Image
-                  nl: Afbeelding
-                type: files
-                multiple: false
+      testimonials: fields/testimonials
       pageLinks:
         type: blocks
         label:

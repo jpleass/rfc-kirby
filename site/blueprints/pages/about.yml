@@ -54,40 +54,5 @@ columns:
             template: data-file
             uploads: false
             query: "site.index.files.template('data-file')"
-          faqTitle:
-            type: text
-            label:
-              en: FAQ Section Title
-              nl: Titel FAQ Sectie
-            help:
-              en: Title for the FAQ section on the about page.
-              nl: Titel voor de FAQ sectie op de over pagina.
-          faqText:
-            type: textarea
-            label:
-              en: FAQ Section Text
-              nl: Tekst FAQ Sectie
-            help:
-              en: Text for the FAQ section on the about page.
-              nl: Tekst voor de FAQ sectie op de over pagina.
-          faqButtons:
-            extends: fields/buttons
-          faqItems:
-            type: structure
-            label:
-              en: FAQ Items
-              nl: FAQ Items
-            help:
-              en: Add items for the FAQ section. Each item will have a question and an answer.
-              nl: Voeg items toe voor de FAQ sectie. Elk item heeft een vraag en een antwoord.
-            fields:
-              question:
-                type: text
-                label:
-                  en: Question
-                  nl: Vraag
-              answer:
-                type: textarea
-                label:
-                  en: Answer
-                  nl: Antwoord
+      faq:
+        extends: sections/faq

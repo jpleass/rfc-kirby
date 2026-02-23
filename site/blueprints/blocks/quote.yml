@@ -1,32 +1,4 @@
+extends: blocks/quote-base
 name: field.blocks.quote.name
-icon: quote
-preview: fields
 fields:
-  text:
-    label: field.blocks.quote.text.label
-    placeholder: field.blocks.quote.text.placeholder
-    type: writer
-    inline: true
-    icon: quote
-  citation:
-    label: field.blocks.quote.citation.label
-    placeholder: field.blocks.quote.citation.placeholder
-    type: writer
-    inline: true
-    icon: user
-  role:
-    label:
-      en: Role
-      nl: Rol
-    type: text
-  logo:
-    label:
-      en: Logo
-      nl: Logo
-    type: files
-    max: 1
-  logoLink:
-    label:
-      en: Logo Link
-      nl: Logo Link
-    type: url
+  logoLink: { label: { en: Logo Link, nl: Logo Link }, type: url }

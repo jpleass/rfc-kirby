@@ -1,0 +1,17 @@
+icon: quote
+preview: fields
+fields:
+  text:
+    label: field.blocks.quote.text.label
+    placeholder: field.blocks.quote.text.placeholder
+    type: writer
+    inline: true
+    icon: quote
+  citation:
+    label: field.blocks.quote.citation.label
+    placeholder: field.blocks.quote.citation.placeholder
+    type: writer
+    inline: true
+    icon: user
+  role: { label: { en: Role, nl: Rol }, type: text }
+  logo: { label: { en: Logo, nl: Logo }, type: files, max: 1 }
