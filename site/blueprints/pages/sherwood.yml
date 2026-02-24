@@ -10,6 +10,7 @@ columns:
         fields:
           headline: false
           subtitle: false
+          buttons: false
       fields:
         type: fields
         fields:
@@ -29,6 +30,7 @@ columns:
                 label:
                   en: Text
                   nl: Tekst
+              buttons: fields/buttons
           animationText:
             type: structure
             label:
@@ -61,6 +63,11 @@ columns:
                 label:
                   en: Title
                   nl: Titel
+              subtitle:
+                type: text
+                label:
+                  en: Subtitle
+                  nl: Subtitel
               text:
                 type: textarea
                 label:
