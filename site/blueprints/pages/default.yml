@@ -13,7 +13,7 @@ tabs:
           fields:
             type: fields
             fields:
-              layout:
+              layouts:
                 type: layout
                 fieldsets:
                   - sectionTitle
