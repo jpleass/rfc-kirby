@@ -1,0 +1,7 @@
+title: Section Title
+label: "{{ title }}"
+fields:
+  title:
+    type: text
+    label: Title
+    help: The title of the section.
