@@ -15,7 +15,17 @@ Kirby::plugin('joseph-pleass/rfc', [
       'html' => fn($tag) => '<span class="caption-text small body-text">' . $tag->value . '</span>'
     ]
   ],
-  'fieldMethods' => [],
+  'fieldMethods' => [
+    /**
+     * @kql-allowed
+     */
+    'toButtons' => function ($field) {
+      $buttons = $field->toStructure();
+      return $buttons->map(function ($button) {
+        return resolveButton($button);
+      })->values();
+    }
+  ],
   'pageMethods' => [],
   'pagesMethods' => [],
   'siteMethods' => []

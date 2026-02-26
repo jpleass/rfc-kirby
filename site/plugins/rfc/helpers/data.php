@@ -29,3 +29,16 @@ function imageToKirbyImageData(?\Kirby\Cms\File $image): ?array
     'blurUrl' => $image->resize(4, 4, 80)->url(),
   ];
 }
+
+
+function resolveButton($button)
+{
+  $isPage = $button->link()->toPage();
+  $isFile = $button->link()->toFile();
+  return [
+    'id' => $button->id(),
+    'text' => $button->text()->value(),
+    'link' => $isPage ? $isPage->uri() : ($isFile ? $isFile->url() : $button->link()->toUrl()),
+    'type' => $button->type()->value(),
+  ];
+}

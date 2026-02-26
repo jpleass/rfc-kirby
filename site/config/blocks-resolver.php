@@ -7,18 +7,6 @@ use Kirby\Cms\Block;
 use Kirby\Content\Field;
 
 
-function resolveButton($button)
-{
-    $isPage = $button->link()->toPage();
-    return [
-        'id' => $button->id(),
-        'text' => $button->text()->value(),
-        'link' => $isPage ? $isPage->uri() : $button->link()->toUrl(),
-        'type' => $button->type()->value(),
-    ];
-}
-
-
 return [
     // Custom resolves for `block:field`
     'defaultResolvers' => [
