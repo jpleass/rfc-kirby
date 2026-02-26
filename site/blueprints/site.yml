@@ -19,6 +19,47 @@ columns:
             headline:
               en: Menu Items
               nl: Menu Items
+          footerNavigation:
+            type: pages
+            headline:
+              en: Footer Navigation
+              nl: Footer Navigatie
+          footerSecondaryNavigation:
+            type: pages
+            headline:
+              en: Footer Secondary Navigation
+              nl: Footer Secundaire Navigatie
+          contact:
+            type: object
+            headline:
+              en: Contact
+              nl: Contact
+            fields:
+              email:
+                type: email
+                headline:
+                  en: Email
+                  nl: E-mail
+              phone:
+                type: tel
+                headline:
+                  en: Phone
+                  nl: Telefoon
+              instagram:
+                type: url
+                headline:
+                  en: Instagram
+                  nl: Instagram
+              linkedin:
+                type: url
+                headline:
+                  en: LinkedIn
+                  nl: LinkedIn
+              youtube:
+                type: url
+                headline:
+                  en: YouTube
+                  nl: YouTube
 
   - width: 1/2
     sections:
