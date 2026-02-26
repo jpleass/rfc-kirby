@@ -10,6 +10,11 @@ sections:
   content:
     type: fields
     fields:
+      vimeoId:
+        type: text
+        label:
+          en: Vimeo ID
+          nl: Vimeo ID
       programmesTitle:
         type: text
         label:

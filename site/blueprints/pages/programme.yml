@@ -34,6 +34,11 @@ tabs:
                 help:
                   en: Upload a cover image for this project.
                   nl: Upload een omslagafbeelding voor dit project.
+              vimeoId:
+                type: text
+                label:
+                  en: Vimeo ID
+                  nl: Vimeo ID
           pageHeader:
             extends: sections/page-header
             fields:
