@@ -1,0 +1,19 @@
+type: object
+fields:
+  title:
+    type: text
+    label:
+      en: CTA Title
+      nl: CTA Titel
+  subtitle:
+    type: text
+    label:
+      en: CTA Subtitle
+      nl: CTA Subtitel
+  text:
+    type: textarea
+    label:
+      en: CTA Text
+      nl: CTA Tekst
+  buttons:
+    extends: fields/buttons

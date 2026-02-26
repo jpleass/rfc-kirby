@@ -16,5 +16,10 @@ columns:
             label:
               en: Carousel Text
               nl: Carrousel Tekst
+          coalitionCTA:
+            extends: fields/cta
+            label:
+              en: Coalition CTA
+              nl: Coalitie CTA
       pages:
         template: coalition-member
