@@ -63,6 +63,17 @@ tabs:
                   nl: Selecteer gerelateerde evenementen.
                 multiple: true
                 query: site.index.template('content-event')
+              featuredArticle:
+                width: 1/2
+                type: pages
+                label:
+                  en: Featured Article
+                  nl: Uitgelicht Artikel
+                help:
+                  en: Select a featured article for this project.
+                  nl: Selecteer een uitgelicht artikel voor dit project.
+                multiple: false
+                query: site.index.template('content-article')
               relatedArticles:
                 width: 1/2
                 type: pages
