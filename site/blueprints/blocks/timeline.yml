@@ -1,0 +1,35 @@
+name:
+  en: Timeline
+  nl: Tijdlijn
+preview: fields
+fields:
+  subtitle:
+    label:
+      en: Subtitle
+      nl: Subtitel
+    type: text
+    placeholder:
+      en: "campaign milestones"
+      nl: "campagne mijlpalen"
+  slides:
+    label:
+      en: Slides
+      nl: Slides
+    type: structure
+    fields:
+      title:
+        label:
+          en: Title
+          nl: Titel
+        type: text
+      text:
+        label:
+          en: Text
+          nl: Tekst
+        type: textarea
+      image:
+        label:
+          en: Image
+          nl: Afbeelding
+        type: files
+        multiple: false

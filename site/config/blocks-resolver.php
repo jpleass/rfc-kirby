@@ -80,5 +80,17 @@ return [
             ] : null;
         },
 
+        // TIMELINE
+        'timeline:slides' => function (Field $field) {
+            return $field->toStructure()->map(function ($slide) {
+                return [
+                    'id' => $slide->id(),
+                    'title' => $slide->title()->value(),
+                    'text' => $slide->text()->value(),
+                    'image' => $slide->image()->toFile() ? imageToKirbyImageData($slide->image()->toFile()) : null,
+                ];
+            })->values();
+        },
+
     ]
 ];
