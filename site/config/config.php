@@ -50,9 +50,13 @@ return [
 
     // See: https://kirby.tools/docs/headless/usage/field-methods#resolvepermalinks
     'permalinksResolver' => [
-        // Strip the origin from URLs
+        // Strip the origin from page URLs so Nuxt handles routing internally,
+        // but keep absolute URLs for files so the browser can fetch them from Kirby.
         'urlParser' => function (string $url, App $kirby) {
             $path = parse_url($url, PHP_URL_PATH);
+            if (str_starts_with($path, '/media/')) {
+                return $url;
+            }
             return $path;
         }
     ],
