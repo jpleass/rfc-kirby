@@ -64,3 +64,5 @@ sections:
                   en: Image
                   nl: Afbeelding
                 multiple: false
+              color:
+                type: text
