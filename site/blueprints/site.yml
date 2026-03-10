@@ -29,6 +29,12 @@ columns:
             headline:
               en: Footer Secondary Navigation
               nl: Footer Secundaire Navigatie
+          anbiLink:
+            type: files
+            headline:
+              en: ANBI File
+              nl: ANBI File
+            multiple: false
           contact:
             type: object
             headline:
