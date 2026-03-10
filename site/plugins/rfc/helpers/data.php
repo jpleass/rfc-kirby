@@ -40,5 +40,6 @@ function resolveButton($button)
     'text' => $button->text()->value(),
     'link' => $isPage ? $isPage->uri() : ($isFile ? $isFile->url() : $button->link()->toUrl()),
     'type' => $button->type()->value(),
+    'isFile' => $isFile ? true : false,
   ];
 }
