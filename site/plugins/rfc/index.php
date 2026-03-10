@@ -21,6 +21,7 @@ Kirby::plugin('joseph-pleass/rfc', [
      */
     'toButtons' => function ($field) {
       $buttons = $field->toStructure();
+      return ['foo'];
       return $buttons->map(function ($button) {
         return resolveButton($button);
       })->values();
