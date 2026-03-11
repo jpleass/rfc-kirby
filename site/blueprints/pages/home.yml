@@ -25,6 +25,7 @@ sections:
         label:
           en: Programmes Introduction
           nl: Programma's Introductie
+      programmesButtons: fields/buttons
       testimonialsTitle:
         type: text
         label:
