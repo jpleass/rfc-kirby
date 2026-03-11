@@ -46,12 +46,12 @@ tabs:
           fields:
             type: fields
             fields:
-              video:
-                type: url
-                label:
-                  en: Video URL
-                  nl: Video URL
-                width: 1/1
+              # video:
+              #   type: url
+              #   label:
+              #     en: Video URL
+              #     nl: Video URL
+              #   width: 1/1
               relatedEvents:
                 width: 1/2
                 type: pages
