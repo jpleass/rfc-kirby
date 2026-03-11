@@ -1,0 +1,13 @@
+type: object
+fields:
+  title:
+    type: text
+    label:
+      en: Title
+      nl: Titel
+  text:
+    type: textarea
+    label:
+      en: Text
+      nl: Tekst
+  buttons: fields/buttons

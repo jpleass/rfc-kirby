@@ -15,22 +15,10 @@ columns:
         type: fields
         fields:
           consultants:
-            type: object
+            extends: fields/headingSection
             label:
               en: Consultants area
               nl: Consultants gebied
-            fields:
-              title:
-                type: text
-                label:
-                  en: Title
-                  nl: Titel
-              text:
-                type: textarea
-                label:
-                  en: Text
-                  nl: Tekst
-              buttons: fields/buttons
           animationText:
             type: structure
             label:
@@ -74,6 +62,11 @@ columns:
                   en: Text
                   nl: Tekst
               buttons: fields/buttons
+          testimonialsHeading:
+            extends: fields/headingSection
+            label:
+              en: Consultants area
+              nl: Consultants gebied
           testimonials: fields/testimonials
       faq:
         extends: sections/faq
