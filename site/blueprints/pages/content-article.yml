@@ -39,4 +39,4 @@ tabs:
         width: 1/3
         sections:
           files: sections/files
-  relatedPartners: tabs/related-partners
+  releatedMembers: tabs/related-members
