@@ -11,12 +11,15 @@ tabs:
           colors:
             type: fields
             fields:
-              color1:
-                label: Color 1
+              color:
+                label: Main Color
                 extends: fields/color
-              color2:
-                label: Color 2
-                extends: fields/color
+              # color1:
+              #   label: Color 1
+              #   extends: fields/color
+              # color2:
+              #   label: Color 2
+              #   extends: fields/color
               archive:
                 type: toggle
                 label:
