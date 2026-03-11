@@ -17,8 +17,8 @@ columns:
           consultants:
             extends: fields/headingSection
             label:
-              en: Consultants area
-              nl: Consultants gebied
+              en: Consultants Heading Section
+              nl: Consultants Koptekst Sectie
           animationText:
             type: structure
             label:
@@ -65,8 +65,8 @@ columns:
           testimonialsHeading:
             extends: fields/headingSection
             label:
-              en: Consultants area
-              nl: Consultants gebied
+              en: Testimonials Heading Section
+              nl: Testimonials Koptekst Sectie
           testimonials: fields/testimonials
       faq:
         extends: sections/faq

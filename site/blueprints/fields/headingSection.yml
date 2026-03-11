@@ -5,6 +5,11 @@ fields:
     label:
       en: Title
       nl: Titel
+  subtitle:
+    type: text
+    label:
+      en: Subtitle
+      nl: Subtitel
   text:
     type: textarea
     label:
