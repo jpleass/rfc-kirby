@@ -80,6 +80,15 @@ return [
             ] : null;
         },
 
+        // INFORMATION CARD
+        'informationCard:cover' => function (Field $field) {
+            return $field->toFile() ? imageToKirbyImageData($field->toFile()) : null;
+        },
+        'informationCard:text' => function (Field $field, Block $block) {
+            return $field->resolvePermalinks()->value();
+        },
+
+
         // TIMELINE
         'timeline:slides' => function (Field $field) {
             return $field->toStructure()->map(function ($slide) {
