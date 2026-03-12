@@ -10,6 +10,16 @@ columns:
       fields:
         type: fields
         fields:
+          informationCards:
+            type: blocks
+            label:
+              en: Information Cards
+              nl: Informatieve Kaarten
+            help:
+              en: Add information cards for the about page.
+              nl: Voeg informatieve kaarten toe voor de over pagina.
+            fieldsets:
+              - informationCard
           teamTitle:
             type: text
             label:

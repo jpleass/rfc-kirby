@@ -1,0 +1,26 @@
+fields:
+  cover:
+    type: files
+    label:
+      en: Cover Image
+      nl: Omslagafbeelding
+    help:
+      en: Add a cover image for the information card.
+      nl: Voeg een omslagafbeelding toe voor de informatie kaart.
+    multiple: false
+  title:
+    type: text
+    label:
+      en: Title
+      nl: Titel
+    help:
+      en: The title of the information card.
+      nl: De titel van de informatie kaart.
+  text:
+    type: textarea
+    label:
+      en: Text
+      nl: Tekst
+    help:
+      en: The text content of the information card.
+      nl: De tekst inhoud van de informatie kaart.
