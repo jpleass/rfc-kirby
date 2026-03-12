@@ -5,3 +5,4 @@ columns:
     sections:
       pages:
         template: coalition-organisation
+        sortable: true

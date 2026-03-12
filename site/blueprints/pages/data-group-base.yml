@@ -7,6 +7,7 @@ columns:
       pages:
         type: pages
         search: true
+        sortable: true
         headline:
           en: Data Entries
           nl: Datapunten

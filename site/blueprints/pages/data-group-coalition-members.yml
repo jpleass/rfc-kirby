@@ -23,3 +23,4 @@ columns:
               nl: Coalitie CTA
       pages:
         template: coalition-member
+        sortable: true
