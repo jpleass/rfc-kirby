@@ -12,7 +12,7 @@ jobs:
       - name: Deploy to Vimexx
         uses: appleboy/ssh-action@v1.0.0
         with:
-          host: web0161.vimexx.net
+          host: web0161.zxcs.nl
           username: u181643p258906
           key: ${{ secrets.VIMEXX_SSH_KEY }}
           script: |
