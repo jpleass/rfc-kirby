@@ -16,7 +16,7 @@ jobs:
           username: u181643p258906
           key: ${{ secrets.VIMEXX_SSH_KEY }}
           script: |
-            cd /domains/robinfoodcoalition.nl/public_html/panel
+            cd /home/u181643p258906/domains/robinfoodcoalition.com/public_html/panel
             if [ ! -d ".git" ]; then
               git clone https://github.com/jpleass/rfc-kirby.git .
             else
