@@ -22,7 +22,7 @@ on:
 #             else
 #               git pull https://github.com/jpleass/rfc-kirby.git
 #             fi
-# TEST
+# TEST Again
 jobs:
   deploy:
     runs-on: ubuntu-latest
