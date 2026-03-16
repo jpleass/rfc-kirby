@@ -80,7 +80,7 @@ return [
             'frontendUrl' => env('KIRBY_HEADLESS_FRONTEND_URL'),
             // Redirect to the Panel if no authorization header is sent,
             // useful for editors visiting the site directly
-            'redirect' => false
+            'redirect' => true
         ],
 
         'cors' => [
