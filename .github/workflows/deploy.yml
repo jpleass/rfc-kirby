@@ -5,20 +5,35 @@ on:
     branches:
       - main
 
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Deploy to Vimexx
+#         uses: appleboy/ssh-action@v1.0.0
+#         with:
+#           host: web0161.zxcs.nl
+#           username: u181643p258906
+#           key: ${{ secrets.VIMEXX_SSH_KEY }}
+#           script: |
+#             cd /home/u181643p258906/domains/robinfoodcoalition.com/public_html/panel
+#             if [ ! -d ".git" ]; then
+#               git clone https://github.com/jpleass/rfc-kirby.git .
+#             else
+#               git pull https://github.com/jpleass/rfc-kirby.git
+#             fi
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to Vimexx
+      - name: Pull latest code on Opalstack server
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: web0161.zxcs.nl
           username: u181643p258906
           key: ${{ secrets.VIMEXX_SSH_KEY }}
           script: |
+            export PATH="$HOME/bin:$PATH"
             cd /home/u181643p258906/domains/robinfoodcoalition.com/public_html/panel
-            if [ ! -d ".git" ]; then
-              git clone https://github.com/jpleass/rfc-kirby.git .
-            else
-              git pull https://github.com/jpleass/rfc-kirby.git
-            fi
+            git pull origin main
