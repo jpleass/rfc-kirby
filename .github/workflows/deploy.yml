@@ -1,4 +1,4 @@
-name: Deploy to Opalstack
+name: Deploy to Vimexx
 
 on:
   push:
@@ -9,13 +9,18 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Pull latest code on Opalstack server
+      - name: Deploy to Vimexx
         uses: appleboy/ssh-action@v1.0.0
         with:
-          host: opal11.opalstack.com
-          username: jpleass
-          key: ${{ secrets.OPALSTACK_SSH_KEY }}
+          host: web0161.vimexx.net
+          username: u181643p258906
+          key: ${{ secrets.VIMEXX_SSH_KEY }}
           script: |
-            export PATH="$HOME/bin:$PATH"
-            cd /home/jpleass/apps/rfc-kirby/
-            git pull origin main
+            mkdir -p ~/.ssh
+            ssh-keyscan github.com >> ~/.ssh/known_hosts
+            cd /domains/robinfoodcoalition.nl/public_html/panel
+            if [ ! -d ".git" ]; then
+              git clone git@github.com:jpleass/rfc-kirby.git .
+            else
+              git pull origin main
+            fi
