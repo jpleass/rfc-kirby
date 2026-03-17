@@ -35,6 +35,22 @@ columns:
               en: ANBI File
               nl: ANBI File
             multiple: false
+          headerCTA:
+            type: object
+            headline:
+              en: Header CTA
+              nl: Header CTA
+            fields:
+              text:
+                type: text
+                headline:
+                  en: Label
+                  nl: Label
+              link:
+                type: link
+                headline:
+                  en: Link
+                  nl: Link
           contact:
             type: object
             headline:
