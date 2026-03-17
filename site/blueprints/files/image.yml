@@ -2,3 +2,6 @@ title: Image
 extends: files/base
 accept:
   type: image
+create:
+  width: 2600
+  height: 2600
