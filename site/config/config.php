@@ -5,7 +5,8 @@ use Kirby\Cms\Page;
 
 return [
 
-    'debug' => env('KIRBY_DEBUG', false),
+    // 'debug' => env('KIRBY_DEBUG', false),
+    'debug' => true,
 
     'yaml' => [
         'handler' => 'symfony'
@@ -18,12 +19,13 @@ return [
     'languages' => env('KIRBY_MULTILANG', false),
 
     'panel' => [
+
         'css' => '/custom-panel.css',
         'install' => env('KIRBY_PANEL_INSTALL', false),
         'slug' => env('KIRBY_PANEL_SLUG', 'panel'),
         'vue' => [
             'compiler' => false
-        ]
+        ],
     ],
 
     'thumbs' => [
@@ -70,6 +72,7 @@ return [
     'headless' => [
         // Enable returning Kirby templates as JSON
         'globalRoutes' => true,
+
 
         // Optional API token to use for authentication, also used
         // for for KQL endpoint
