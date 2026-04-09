@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fbe1047405996b5a5ecded9ad9f15b4f",
+    "content-hash": "b4bd459fc817167a10b8ec6e184b14be",
     "packages": [
         {
             "name": "christian-riesen/base32",
@@ -1711,6 +1711,74 @@
             "time": "2025-12-04T18:11:45+00:00"
         },
         {
+            "name": "tobimori/kirby-seo",
+            "version": "2.0.0-beta.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tobimori/kirby-seo.git",
+                "reference": "c16472022f53eba9c58ec73b10926129f889f86d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tobimori/kirby-seo/zipball/c16472022f53eba9c58ec73b10926129f889f86d",
+                "reference": "c16472022f53eba9c58ec73b10926129f889f86d",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2.1",
+                "php": ">=8.3.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.48",
+                "getkirby/cli": "^1.8.0",
+                "getkirby/cms": "^5.0.0",
+                "spatie/schema-org": "^3.23",
+                "tobimori/kirby-queues": "^1.0.0-beta.1"
+            },
+            "suggest": {
+                "ext-imagick": "Rasterize non-resizable images (SVG, etc.) for AI alt text generation",
+                "getkirby/cli": "Enable background processing support",
+                "spatie/schema-org": "Enable the Schema.org support",
+                "tobimori/kirby-queues": "Enable background processing support"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": false
+            },
+            "autoload": {
+                "psr-4": {
+                    "tobimori\\Seo\\": "classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Möritz",
+                    "email": "tobias@moeritz.io"
+                }
+            ],
+            "description": "The default choice for SEO on Kirby: Implement technical SEO & Meta best practices with ease and provide an easy-to-use editor experience",
+            "homepage": "https://github.com/tobimori/kirby-seo#readme",
+            "support": {
+                "issues": "https://github.com/tobimori/kirby-seo/issues",
+                "source": "https://github.com/tobimori/kirby-seo/tree/2.0.0-beta.3"
+            },
+            "funding": [
+                {
+                    "url": "https://plugins.andkindness.com/seo/preorder",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/tobimori",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-03-10T23:31:27+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.6.3",
             "source": {
@@ -1798,7 +1866,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "tobimori/kirby-seo": 10
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

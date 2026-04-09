@@ -8,7 +8,8 @@
     "ext-intl": "*",
     "ext-fileinfo": "*",
     "ext-gd": "*",
-    "johannschopplich/kirbylog": "^1.4"
+    "johannschopplich/kirbylog": "^1.4",
+    "tobimori/kirby-seo": "^2.0.0-beta.2"
   },
   "scripts": {
     "start": [

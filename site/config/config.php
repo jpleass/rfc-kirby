@@ -46,6 +46,25 @@ return [
         ]
     ],
 
+    'tobimori.seo.sitemap' => [
+        'active' => true,
+        // 'groupByTemplate' => true, // Create separate sitemaps for each template type
+        // 'excludeTemplates' => ['error'], // Exclude templates from sitemap
+        // 'changefreq' => 'weekly', // Change frequency, can be a string or a function
+        // 'priority' => fn(Page $p) => number_format(($p->isHomePage()) ? 1 : max(1 - 0.2 * $p->depth(), 0.2), 1), // Priority, can be a string or a function
+    ],
+
+
+    'tobimori.seo.canonicalBase' => env('KIRBY_HEADLESS_FRONTEND_URL'),
+    'tobimori.seo.robots' => [
+        'active' => true,
+        'index' => true,
+        'lang' => 'nl',
+        'pageSettings' => false,
+    ],
+
+
+
     // Blocks resolver configuration
     // See: https://kirby.tools/docs/headless/usage/field-methods#toresolvedblocks
     'blocksResolver' => require __DIR__ . '/blocks-resolver.php',
