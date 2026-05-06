@@ -9,8 +9,8 @@ columns:
         extends: sections/page-header
         fields:
           headline: false
-          subtitle: false
-          buttons: false
+          # subtitle: false
+          # buttons: false
       fields:
         type: fields
         fields:
