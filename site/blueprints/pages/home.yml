@@ -7,6 +7,11 @@ sections:
     extends: sections/page-header
     fields:
       headline: false
+      mobileHeadline:
+        type: text
+        label:
+          en: Mobile Headline
+          nl: Mobiele Koptekst
   content:
     type: fields
     fields:
