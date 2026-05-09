@@ -19,6 +19,11 @@ columns:
             label:
               en: Consultants Heading Section
               nl: Consultants Koptekst Sectie
+          strategySection:
+            extends: fields/headingSection
+            label:
+              en: Consultants Heading Section
+              nl: Consultants Koptekst Sectie
           animationText:
             type: structure
             label:
