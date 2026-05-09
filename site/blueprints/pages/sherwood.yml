@@ -22,8 +22,8 @@ columns:
           strategySection:
             extends: fields/headingSection
             label:
-              en: Consultants Heading Section
-              nl: Consultants Koptekst Sectie
+              en: Strategy Heading Section
+              nl: Strategie Koptekst Sectie
           animationText:
             type: structure
             label:
