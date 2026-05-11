@@ -37,6 +37,8 @@ sections:
           en: Testimonials Title
           nl: Testimonials Titel
       testimonials: fields/testimonials
+      faq:
+        extends: sections/faq
       pageLinks:
         type: blocks
         label:
