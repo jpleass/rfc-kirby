@@ -12,4 +12,6 @@ fields:
       - buttons
       - gap
       - timeline
+      - faq
+      - logoGrid
       # - code

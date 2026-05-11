@@ -29,6 +29,12 @@ return [
                 return imageToKirbyImageData($image);
             })->values();
         },
+        // LOGO GRID
+        'logoGrid:images' => function (Field $field, Block $block) {
+            return $field->toFiles()->map(function ($image) {
+                return imageToKirbyImageData($image);
+            })->values();
+        },
         // INLINE IMAGE
         'inline-image:image' => function (Field $field, Block $block) {
             return $field->toFile() ? imageToKirbyImageData($field->toFile()) : null;
@@ -88,6 +94,22 @@ return [
             return $field->resolvePermalinks()->value();
         },
 
+
+        // FAQ
+        'faq:faqButtons' => function (Field $field, Block $block) {
+            return $field->toStructure()->map(function ($button) {
+                return resolveButton($button);
+            })->values();
+        },
+        'faq:faqItems' => function (Field $field) {
+            return $field->toStructure()->map(function ($item) {
+                return [
+                    'id'       => $item->id(),
+                    'question' => $item->question()->value(),
+                    'answer'   => $item->answer()->value(),
+                ];
+            })->values();
+        },
 
         // TIMELINE
         'timeline:slides' => function (Field $field) {
