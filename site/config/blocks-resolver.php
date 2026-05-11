@@ -96,6 +96,12 @@ return [
 
 
         // FAQ
+        'faq:faqTitle' => function (Field $field) {
+            return $field->value();
+        },
+        'faq:faqText' => function (Field $field, Block $block) {
+            return $field->resolvePermalinks()->value();
+        },
         'faq:faqButtons' => function (Field $field, Block $block) {
             return $field->toStructure()->map(function ($button) {
                 return resolveButton($button);
@@ -106,7 +112,7 @@ return [
                 return [
                     'id'       => $item->id(),
                     'question' => $item->question()->value(),
-                    'answer'   => $item->answer()->value(),
+                    'answer'   => $item->answer()->resolvePermalinks()->value(),
                 ];
             })->values();
         },
